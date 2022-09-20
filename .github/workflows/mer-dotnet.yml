@@ -21,3 +21,9 @@ jobs:
       - name: "Restore Tests"
         run: dotnet restore $Notes_Api_Test
 
+      - name: "Build Tests"
+        run: dotnet build $Notes_Api_Test
+
+      - name: "Run Tests"
+        run: dotnet run $Notes_Api_Test
+
